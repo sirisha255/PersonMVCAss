@@ -19,13 +19,14 @@
             </div>
             <div class="form-group">
                 <label asp-for="City" class="control-label"></label>
-                <input asp-for="City" list="personleList" class="form-control" />
+                <input asp-for="City" list="personsList" class="form-control" />
                 <span asp-validation-for="City" class="text-danger"></span>
-                <datalist id="personList">
-                    @foreach (string person in Model.PersonList)
+                <datalist id="personsList">
+                    @foreach (string person in Model.PersonsList)
                     {
                         <option value="@city">@City</option>
                     }
+
                 </datalist>
             </div>
             <div class="form-group">
